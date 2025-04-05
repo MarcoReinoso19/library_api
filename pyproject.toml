@@ -1,0 +1,30 @@
+[project]
+name = "library-api"
+version = "0.1.0"
+description = "A simple library API for managing inventory"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.14.0",
+    "fastapi[standard]>=0.115.6",
+    "inflect>=7.4.0",
+    "mypy>=1.13.0",
+    "psutil>=6.1.0",
+    "pydantic[email]>=2.10.3",
+    "python-jose[cryptography]>=3.3.0",
+    "requests>=2.32.3",
+    "slowapi>=0.1.9",
+    "types-python-dateutil>=2.9.0.20241206",
+    "psycopg[binary]>=3.2.3",
+    "bcrypt==3.2.0",
+    "passlib[bcrypt]>=1.7.4",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.3",
+    "types-passlib>=1.7.7.20240819",
+    "types-psutil>=6.1.0.20241102",
+    "types-python-jose>=3.3.4.20240106",
+    "types-requests>=2.32.0.20241016",
+]
